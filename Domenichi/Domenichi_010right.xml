@@ -1,0 +1,260 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<!DOCTYPE transcription [
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY eacute "é">
+<!ENTITY egrave "è">
+<!ENTITY ecirc "ê">
+<!ENTITY ograve "ò">
+<!ENTITY ocirc "Ô">
+<!ENTITY euml "ë">
+<!ENTITY igrave "ì">
+<!ENTITY ugrave "ù">
+]
+>
+
+<transcription>
+    <page filename="Domenichi_010right" pagination="331" reader="Harvey"/>
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                      Lett Eutrapelus all men to speake sensibly;
+                    </marginalia_text>
+                	<emphasis method="chalk"/>
+                </position>
+            	<position place="right_margin" book_orientation="0">
+            		<marginalia_text>
+            			resolue soundly; &amp; do
+            		</marginalia_text>
+            		<emphasis method="pen" text="resolue"/>
+            	</position>
+            	<position place="intext" book_orientation="0">
+            		<marginalia_text>
+            			worthily: or lett
+            			Eutrapelus be reckoned amongst the vulgars.
+            		</marginalia_text>
+            		<person name="Eutrapelus"/>
+            	</position>
+            </language>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Indigna lectu, quae nihil valent. )    					
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Where there is no oppartunitie to
+    					Do valorously: there is occasion to speak notably.
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Chrysotechnus must euer shew himself more, then
+    				</marginalia_text>
+    				<person name="Chrystotechnus"/>
+    				<emphasis method="pen" text="euer shew himself"/>
+    				<emphasis method="pen" text="more, then"/>
+    			</position>
+    			<position place="right_margin" book_orientation="0">
+    				<marginalia_text>
+    					an ordinari ) man.
+    				</marginalia_text>
+    				<emphasis method="pen" text="ordinari man"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					He is little worth, that is not allwais more worth,
+    					then a Common gentleman.
+    				</marginalia_text>
+    				<emphasis method="pen" text="more worth"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					Chrystotechnus allwais most excellent in action: or most notable in
+    					discourse.
+    				</marginalia_text>
+    				<person person_name="Chrystotechnus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					praetend the least: intend the most:
+    					extend the vttermost.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+        
+        <!-- Underlines -->
+        
+        <underline method="pen" type="straight" text="pazzo essendogli"/>
+    	<underline method="pen" type="straight" text="poco piu sauio che 'l figliuolo"/>
+    	<underline method="pen" type="straight" text="Gigi cominci&ograve;"/>
+    	<underline method="pen" type="straight" text="fugg&igrave; fanciullo"/>
+    	<underline method="pen" type="straight" text="ecco Nanni"/>
+    	<underline method="pen" type="straight" text="Piero di Cardinale"/>
+    	<underline method="pen" type="straight" text="molto pigro"/>
+    	<underline method="pen" type="straight" text="dello scriuere"/>
+    	<underline method="pen" type="straight" text="io non scriuo mai"/>
+    	<underline method="pen" type="straight" text="lettere, che ti"/>
+    	<underline method="pen" type="straight" text="io non ne leggo mai"/>
+    	<underline method="pen" type="straight" text="Lorenzo de' Medici"/>
+    	<underline method="pen" type="straight" text="non uoleua legger lettera"/>
+    	<underline method="pen" type="straight" text="far&ograve; Piero di Cadinale"/>
+    	<underline method="pen" type="straight" text="freddo"/>
+    	<underline method="pen" type="straight" text="sensale Bolognese"/>
+    	<underline method="pen" type="straight" text="assaggiaua i uini"/>
+    	<underline method="pen" type="straight" text="uno scoppietto con la bocca"/>
+    	<underline method="pen" type="straight" text="accennando col capo"/>
+    	<underline method="pen" type="straight" text="questo uino"/>
+    	<underline method="pen" type="straight" text="pare forte"/>
+    	<underline method="pen" type="straight" text="oh"/>
+    	<underline method="pen" type="straight" text="l'azzennai ben"/>
+    	<underline method="pen" type="straight" text="manomettere"/>
+    	<underline method="pen" type="straight" text="madre"/>
+    	<underline method="pen" type="straight" text="fate"/>
+    	<underline method="pen" type="straight" text="che s&ograve; io f&ograve;"/>
+    	<underline method="pen" type="straight" text="umbe fate tosto"/>
+    	<underline method="pen" type="straight" text="uu&ograve; fare anch'io"/>
+    	<underline method="pen" type="straight" text="Porco"/>
+    	<underline method="pen" type="straight" text="compagno al banco"/>
+    	<underline method="pen" type="straight" text="Nicolao"/>
+    	<underline method="pen" type="straight" text="poco si fidaua"/>
+    	<underline method="pen" type="straight" text="nouerar denari"/>
+    	<underline method="pen" type="straight" text="un ladro, &amp; tolse la tasca"/>
+    	<underline method="pen" type="straight" text="al ladro, al ladro"/>
+    	        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="left_margin"/>
+    	<symbol name="JC" place="right_margin"/>
+    	<symbol name="SS" place="tail"/>
+    	        
+    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	<!-- Right margin -->
+    	<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- This could also be an emphasis for his own annotation -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- fan -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- huo -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- corren -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- grida -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- do -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- co -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- co -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- leg -->
+    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- leg -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Cardinale. -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- manomettere -->
+    	
+    	<!-- Left margin -->
+    	<mark name="bracket" method="pen" place="left_margin"/> <!-- do ... re -->
+    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- go mai -->
+    	<mark name="quotation_mark" method="pen" place="left_margin" /> <!-- uuo -->
+    	    	
+    	<!-- Intext  -->
+    	<mark name="quotation_mark" method="pen" place="intext" text="ecco"/> 
+    	<mark name="apostrophe" method="pen" place="intext"/> <!-- Nanni. -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- Nanni. -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- Piero -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- molto pigro -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- pigro, il -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- non scriuo -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- ne leg -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- mai. Onde -->
+    	<mark name="quotation_mark" method="pen" place="intext" text="freddo"/> <!-- Straight quotes -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- freddo.] -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- nai ben mi. -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- madre, lo -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- al banco -->
+    	
+    	
+    </annotation>
+</transcription>

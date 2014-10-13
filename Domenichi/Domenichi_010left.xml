@@ -1,0 +1,262 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<!DOCTYPE transcription [
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY eacute "é">
+<!ENTITY egrave "è">
+<!ENTITY ecirc "ê">
+<!ENTITY ograve "ò">
+<!ENTITY ocirc "Ô">
+<!ENTITY euml "ë">
+<!ENTITY igrave "ì">
+<!ENTITY ugrave "ù">
+]
+>
+
+<transcription>
+    <page filename="Domenichi_0010left" pagination="330" reader="Harvey"/>
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                      Eutrapelus scornes himself, till he teaches all
+                    </marginalia_text>
+                	<person person_name="Eutrapelus"/>
+                </position>
+            	<position place="left_margin" book_orientation="0">
+            		<marginalia_text>
+            			other, to pronounce more
+            		</marginalia_text>
+            		<emphasis method="chalk"/>
+            	</position>
+            	<position place="intext" book_orientation="0">
+            		<marginalia_text>
+            			sensibly; to expresse more liuely; to speake
+            		</marginalia_text>
+            	</position>
+            	<position place="left_margin" book_orientation="0">
+            		<marginalia_text>
+            			more effectually; to resolue &amp; persuade
+            			more powrefully, 
+            		</marginalia_text>
+            	</position>
+            	<position place="intext" book_orientation="0">
+            		<marginalia_text>
+            			then anie other heretofore.
+            		</marginalia_text>
+            	</position>
+            </language>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo. )
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					problemata, et aenigmata plebea. )
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					necessaria non necessarijs: prudens electio.
+    					Hoc agit: nec curat parerga.
+    				</marginalia_text>
+    			</position>    			
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo. fantastico.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					Lett Eutrapelus excell all other in speaking, designing
+    					&amp; doing: or lett Eutrapelus be accounted a
+    					meacock, &amp; a base fellow.
+    				</marginalia_text>
+    				<person person_name="Eutrapelus"/>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					O sordide, vbi sunt aetheri spiritus?		<!-- How should I mark the "O" with the circumflex? -->
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					Alwais sum singularitie in action, or counsell: in speach, or behauiour.
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+        
+        <!-- Underlines -->
+        
+        <underline method="pen" type="straight" text="si cerca"/>
+    	<underline method="pen" type="straight" text="uorrebbe trouare"/>
+    	<underline method="pen" type="straight" text="una ricamatrice"/>
+    	<underline method="pen" type="straight" text="la piu pulita arte"/>
+    	<underline method="pen" type="straight" text="Fornaciai, i quali"/>
+    	<underline method="pen" type="straight" text="cacare, che"/>
+    	<underline method="pen" type="straight" text="lauino prima le mani"/>
+    	<underline method="pen" type="straight" text="la lepre si"/>
+    	<underline method="pen" type="straight" text="guardare in dietro"/>
+    	<underline method="pen" type="straight" text="i cani le danno"/>
+    	<underline method="pen" type="straight" text="non ha gli occhi al culo"/>
+    	<underline method="pen" type="straight" text="Giuochi Carnascialeschi"/>
+    	<underline method="pen" type="straight" text="Giuliano de' Medici"/>
+    	<underline method="pen" type="straight" text="alla guardispensa"/>
+    	<underline method="pen" type="straight" text="gran Signore passaua"/>
+    	<underline method="pen" type="straight" text="si passi: io uu&ograve; cacare"/>
+    	<underline method="pen" type="straight" text="gi&agrave; in prouerbio"/>
+    	<underline method="pen" type="straight" text="Puossi scusare"/>
+    	<underline method="pen" type="straight" text="nuouo pesce"/>
+    	<underline method="pen" type="straight" text="Lionardo"/>
+    	<underline method="pen" type="straight" text="Aretino"/>
+    	<underline method="pen" type="straight" text="Carluzzo"/>
+    	<underline method="pen" type="straight" text="Lionardazzo"/>
+    	<underline method="pen" type="straight" text="h&ograve; parecchi lettere Greghe"/>
+    	<underline method="pen" type="straight" text="tutti nel merdazzo"/>
+    	<underline method="pen" type="straight" text="Greche"/>
+    	<underline method="pen" type="straight" text="andare in Costantinopoli"/>
+    	<underline method="pen" type="straight" text="inciampato a Napoli"/>
+    	<underline method="pen" type="straight" text="s'innamor&ograve; di non"/>
+    	<underline method="pen" type="straight" text="quiui spese tutti i suoi denari"/>
+    	<underline method="pen" type="straight" text="scusso a Fiorenza"/>
+    	<underline method="pen" type="straight" text="sempre soggiungeua"/>
+    	<underline method="pen" type="straight" text="lettere Greghe"/>
+    	<underline method="pen" type="straight" text="appar&ograve; il Barghella"/>
+    	
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        <!-- No apparent symbols -->
+        
+    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	<!-- Right margin -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- l'huo -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- ri -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- fa -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- dis -->
+    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- cacare; & -->
+    	<mark name="bracket" method="pen" place="right_margin"/> <!-- soleua ... lettere -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- io non -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Greghe, -->
+    	
+    	<!-- Left margin -->
+    	<mark name="quotation_mark" method="pen" place="left_margin" /> <!-- si lauino -->
+    	<mark name="bracket" method="pen" place="left_margin" /> <!-- questo .. un fanciullo -->
+    	<mark name="equal_sign" method="pen" place="left_margin" /> <!-- re passaua -->
+    	<mark name="quotation_mark" method="pen" place="left_margin" /> <!-- & Lionardazzo -->
+    	<mark name="vertical_bar" method="pen" place="left_margin" /> <!-- I marked this as a vertical bar, but there are actually two; should this be marked as a hash or something? -->
+    	<mark name="bracket" method="pen" place="left_margin" /> <!-- pree ... che -->
+    	    	
+    	<!-- Intext -->
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Last paragraph on the left -->
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Last paragraph on the right -->
+    	<mark name="plus_sign" method="pen" place="intext" text="cerca"/> <!--  -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- trouare. ] -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- piu pulita -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- sua, quelli -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- mani . Et -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- caccia, dis -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- passaua, & -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- ; & -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- fanciullo.] -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- & soleua -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- pesce, & -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- Straight quotes. Carluzzo, -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- lettere Greghe -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- merdazzo. Et -->
+        
+    </annotation>
+</transcription>
