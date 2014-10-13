@@ -112,8 +112,9 @@
     		<language ident="EN">
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
-    					Barland. 	<!-- I don't know if this is a person or a place -->
+    					Barland. 	
     				</marginalia_text>
+    				<person name="Adrianus Barlandus"/>
     			</position>
     		</language>
     	</marginalia>
@@ -140,8 +141,8 @@
     		<language ident="LA">
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
-    					εν αχμη. <!-- Characters with breathing marks don't seem to show up in Oxygen -->
-    					in auge.
+    					&#x1f10;&#x3bd; &#x1f00;&#x3c7;&#x3bc;&#x1fc6;. <!-- en axme -->
+    						in auge.
     				</marginalia_text>
     			</position>
     		</language>
@@ -165,7 +166,7 @@
     			<language ident="LA">
     				<position place="tail" book_orientation="0">
     					<marginalia_text>
-    						philast <!-- The rest is cut off due to a tear in the page -->
+    						philast[-] 
     					</marginalia_text>
     				</position>
     			</language>
@@ -184,7 +185,7 @@
     			<position place="right_margin" book_orientation="90">
     				<marginalia_text>
     					[So]la mihi vita est, mera dictio, et actio Solis:
-    					[e]ntelechia triplex: vnica vita globi.	<!-- Page tear here as well, though it looks like it's easy to guess the missing letters -->
+    					[e]ntelechia triplex: vnica vita globi.	
     				</marginalia_text>
     				<emphasis method="chalk"/>
     			</position>
@@ -208,6 +209,7 @@
     	<underline method="pen" type="straight" language="IT" text="padrone"/>
     	<underline method="pen" type="straight" language="IT" text="molti nauili"/>
     	<underline method="pen" type="straight" language="IT" text="felicit&agrave;, che pende dalle funi"/>
+    	<underline method="pen" type="straight" language="IT" text="sauio"/>
     	<underline method="pen" type="straight" language="IT" text="tre donne"/>
     	<underline method="pen" type="straight" language="IT" text="posero pegno"/>
     	<underline method="pen" type="straight" language="IT" text="maggiore schiocchezza facesse"/>

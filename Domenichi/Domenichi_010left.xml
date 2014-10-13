@@ -164,7 +164,7 @@
     		<language ident="LA">
     			<position place="left_margin" book_orientation="90">
     				<marginalia_text>
-    					O sordide, vbi sunt aetheri spiritus?		<!-- How should I mark the "O" with the circumflex? -->
+    					&ocirc; sordide, vbi sunt aetheri spiritus?
     				</marginalia_text>
     				<emphasis method="chalk"/>
     			</position>
@@ -237,7 +237,7 @@
     	<mark name="bracket" method="pen" place="left_margin" /> <!-- questo .. un fanciullo -->
     	<mark name="equal_sign" method="pen" place="left_margin" /> <!-- re passaua -->
     	<mark name="quotation_mark" method="pen" place="left_margin" /> <!-- & Lionardazzo -->
-    	<mark name="vertical_bar" method="pen" place="left_margin" /> <!-- I marked this as a vertical bar, but there are actually two; should this be marked as a hash or something? -->
+    	<mark name="vertical_bar" method="pen" place="left_margin" />
     	<mark name="bracket" method="pen" place="left_margin" /> <!-- pree ... che -->
     	    	
     	<!-- Intext -->
