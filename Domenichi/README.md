@@ -3,7 +3,7 @@
 This directory contains the XML files for Harvey's annotations of the following works bound together:
 
 ```
-Domenichi, Lodovico		Facetie, motti, et burle di diversi signori et persone private (Venice, 1571)
+Domenichi, Lodovico		    Facetie, motti, et burle di diversi signori et persone private (Venice, 1571)
 
 Guicciardini, Lodovico		Detti et fatti piacevoli et gravi (Venice, 1571)
 
