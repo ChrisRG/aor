@@ -86,7 +86,7 @@
     				<marginalia_text>
     					) Vita Eutuchi.
     				</marginalia_text>
-    				<person name="Eutuchus"/> <!-- Another creation of Harvey's  --> <!--JG: Great, you can leave this (and other similar) comments in, this is added (scholarly) value from which end users can benefit-->
+    				<person name="Eutuchus"/> <!-- Another creation of Harvey's  --> 
     			</position>
     		</language>
     	</marginalia>
@@ -115,16 +115,8 @@
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
     					Continual | emproouement of eueri part. 
-    				</marginalia_text> <!--JG: I'd add chalk emphasis here as well-->
-    			</position>
-    		</language>
-    	</marginalia>
-    	<marginalia hand="Italian">
-    		<language ident="IT">
-    			<position place="tail" book_orientation="0">
-    				<marginalia_text>
-    					) <!--JG: You can put this bracket before the other bracket in the marginal note with 'Giulio'-->
     				</marginalia_text>
+    				<emphasis method="chalk"/>
     			</position>
     		</language>
     	</marginalia>
@@ -142,7 +134,7 @@
     		<language ident="IT">
     			<position place="tail" book_orientation="0">
     				<marginalia_text>
-    					{ Giulio [z:do] <!--JG: I don't know this abbreviation. Have you looked in A. Cappelli, Dizionario di Abbreviature latine ed italiane?-->
+    					) { Giulio [z:do] <!--Abbreviation unclear.-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -151,7 +143,7 @@
     		<language ident="EN">
     			<position place="left_margin" book_orientation="90">
     				<marginalia_text>
-    					Not the talnes, or lownes; but the worthines, or vnworthines ma[ke]s, or marres. <!--JG: Tricky one, could be 'ke' indeed-->
+    					Not the talnes, or lownes; but the worthines, or vnworthines ma[ke]s, or marres.
     				</marginalia_text>
     			</position>
     		</language>
@@ -162,7 +154,8 @@
     				<marginalia_text>
     					Solo mihi vita est, in dictis emphasis; actis
     					Dexteritas; rerum copia; laetus agon. }
-    				</marginalia_text> <!--JG: I'd add chalk emphasis here as well-->
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
     			</position>
     		</language>
     	</marginalia>
@@ -244,7 +237,6 @@
     	<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- magna -->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- Cardi -->
-    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- mettere al --> <!--JG: I think this dash is printed, and not added by Harvey-->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- fio -->
     	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Sisto -->
     	
