@@ -22,8 +22,8 @@ A useful comparison chart:
 
 ```
 ABO scan  File name     Actual pagination
-5	right	  Ha2.001r      321
-6	left	  Ha2.001v      322
+5	right   Ha2.001r      321
+6	left    Ha2.001v      322
 6	right   Ha2.002r      323
 7	left    Ha2.002v      324
 7	right   Ha2.003r      325
