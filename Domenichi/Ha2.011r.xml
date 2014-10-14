@@ -1,0 +1,249 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<!-- Updated 10/10/2014 -->
+
+<!DOCTYPE transcription [
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY eacute "é">
+<!ENTITY egrave "è">
+<!ENTITY ecirc "ê">
+<!ENTITY ograve "ò">
+<!ENTITY ocirc "Ô">
+<!ENTITY euml "ë">
+<!ENTITY igrave "ì">
+<!ENTITY ugrave "ù">
+]
+>
+
+<transcription>
+	<page filename="Ha2.011r.tif" pagination="341" reader="Harvey"/>	<!-- ABO Scan 15right -->
+		    <annotation>
+		        
+		        <!-- Marginalia -->
+		        	<marginalia hand="Italian">
+		            		<language ident="LA">
+		                		<position place="head" book_orientation="0">
+		                    			<marginalia_text>
+		                      			Vita Chrysotechni iterum.
+		             			</marginalia_text>
+		                			<person name="Chrysotechnus"/>
+		                		</position>
+		            		</language>
+		        	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					pares cum paribus.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					su[pra]
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					No[n] curo speciem, sed individuu[m].
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					alioqui leonina societas.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="IT">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					Laura del Petrarca.
+		    				</marginalia_text>
+		    				<person name="Laura"/>
+		    				<person name="Petrarch"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="tailt" book_orientation="0">
+		    				<marginalia_text>
+		    					Proa[-]resius, instar omnium Aulicoru[m],	<!-- Unclear abbreviation.  -->
+		    					aut Oratorum Mundi.			
+		    				</marginalia_text>
+		    				<emphasis method="chalk"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="left_margin" book_orientation="90">
+		    				<marginalia_text>
+		    					Vnicismus non ab extra, sed ab intra. Sibi quisq[ue] bibliotheca, et
+		    					Aula regia. Discant &agrave; me Auliti:  non ego ab Aulicis.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="right_margin" book_orientation="90">
+		    				<marginalia_text>
+		    					{ Artes apex; [virtus] adamantina virtus; aurea praxis; 	<!-- First virtus is crossed out. How should I mark this? -->
+		    					Arcanorum acies vnica, vita mea est.
+		    				</marginalia_text>
+		    				<emphasis method="chalk"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		        
+		        
+		        <!-- Underlines -->
+		        
+		        
+		    	<underline method="pen" type="straight" text="non mi ponga un pi&egrave; addosso"/>
+		    	<underline method="pen" type="straight" text="mia uita, &amp; la nostra amicitia"/>
+		    	<underline method="pen" type="straight" text="fra i pari"/>
+		    	<underline method="pen" type="straight" text="disaguaglianza la rompe"/>
+		    	<underline method="pen" type="straight" text="grandi, &amp; piccioli"/>
+		    	<underline method="pen" type="straight" text="chiamare amicitia"/>
+		    	<underline method="pen" type="straight" text="donna Bolognese, la quale"/>
+		    	<underline method="pen" type="straight" text="di prudentia"/>
+		    	<underline method="pen" type="straight" text="di ricchezze"/>
+		    	<underline method="pen" type="straight" text="la nobilit&agrave; del"/>
+		    	<underline method="pen" type="straight" text="non cedeua ad alcuna"/>
+		    	<underline method="pen" type="straight" text="piu liberale della sua pudicitia di quel"/>
+		    	<underline method="pen" type="straight" text="d'argutie, et di facetie co[n]uenieni a gentildo[n]na"/>
+		    	<underline method="pen" type="straight" text="era di uerno"/>
+		    	<underline method="pen" type="straight" text="cose d'amore"/>
+		    	<underline method="pen" type="straight" text="leggendosi il Petrarca, &amp;"/>
+		    	<underline method="pen" type="straight" text="Tennemi Amore anni vent' uno ardendo"/>
+		    	<underline method="pen" type="straight" text="hauer' amato Mado[n]na Laura"/>
+		    	<underline method="pen" type="straight" text="donna da lui molto celebrata, anni venti uno"/>
+		    	<underline method="pen" type="straight" text="vita, &amp; dop&ograve; morte di lei altri dieci anni"/>
+		    	<underline method="pen" type="straight" text="castamente"/>
+		    	<underline method="pen" type="straight" text="buona intentione"/>
+		    	<underline method="pen" type="straight" text="alcun frutto d'amore"/>
+		    	<underline method="pen" type="straight" text="stesse tanto tempo innamorato in darno"/>
+		    	<underline method="pen" type="straight" text="ci&ograve; negaua quasi"/>
+		    	<underline method="pen" type="straight" text="mille uolte a' suoi"/>
+		    	<underline method="pen" type="straight" text="colto amoroso piacere di Madonna"/>
+		    	<underline method="pen" type="straight" text="sue rime"/>
+		    	<underline method="pen" type="straight" text="modesto amatore"/>
+		    	<underline method="pen" type="straight" text="nieghi sopra tutto"/>
+		    	<underline method="pen" type="straight" text="per castissima, &amp; sauissima"/>
+		    	<underline method="pen" type="straight" text="donna sempre lodi"/>
+		    	<underline method="pen" type="straight" text="detta gentildonna"/>
+		    
+		        
+		        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+		        
+		    	<symbol name="SS" place="head"/>
+		    	<symbol name="SS" place="head"/>
+		    	<symbol name="SS" place="right_margin"/>
+		        
+		        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+		    	
+		    	<!-- Right margin -->
+		    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- un -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ami -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- pu -->
+		    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- abon -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- abon -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ra --> 
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ue -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- Mado[n] -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- d'a --> 
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- col -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- affer --> 
+		    	
+		    	<!-- Left margin -->
+		    	<mark name="bracket" method="pen" place="left_margin"/> <!-- ro...la -->
+		    	<mark name="bracket" method="pen" place="left_margin"/>  <!-- dere ... pero -->
+		    	<mark name="bracket" method="pen" place="left_margin"/> <!-- era ... donna -->
+		    
+		    	<!-- Intext -->
+		    	<mark name="dot" method="pen" place="intext"/> <!-- addosso, perche  -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- i pari  -->
+		    	<mark name="dot" method="pen" place="intext"/> <!-- amicitia, &  -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- rompe. -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- citia.] -->
+		    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- Bolognese  -->
+		    	<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- sua pu  -->
+		    	<mark name="circumflex" method="pen" place="intext"/> <!-- argutie  -->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="amore"/>
+		    	<mark name="dot" method="pen" place="intext"/> <!-- amore, &  -->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="amato"/>
+		    	<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- castamente  -->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="modesto"/>
+		    	<mark name="dot" method="pen" place="intext"/> <!-- tutti, & lei -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- & sauissima -->
+
+    </annotation>
+</transcription>
