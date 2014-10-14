@@ -21,7 +21,7 @@ Names are ordered beginning with the first page containing text, and are therefo
 A useful comparison chart:
 
 ```
-ABO scan  File name     Actual pagination
+ABO scan    File name     Actual pagination
 5	right   Ha2.001r      321
 6	left    Ha2.001v      322
 6	right   Ha2.002r      323
