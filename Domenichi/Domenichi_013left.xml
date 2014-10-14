@@ -102,7 +102,7 @@
     		<language ident="EN">
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
-    					Euerie dat better, &amp; better.
+    					Euerie dat better, &amp; better. <!--JG: day instead of day-->
     				</marginalia_text>
     				<emphasis method="pen" text="Euerie"/>
     				<emphasis method="pen" text="better, &amp; better"/>
@@ -111,7 +111,7 @@
     	</marginalia>
     	<marginalia hand="Italian">
     		<language ident="IT">
-    			<position place="tail" book_orientation="0">
+    			<position place="tail" book_orientation="0"> <!--JG: You could put 'Pontano' and 'Paiceuolezze' in the anchor_text attribute, since the link with the printed text is quite obvious here-->
     				<marginalia_text>
     					{ Pontano, nato a piaceuolezze. )
     				</marginalia_text>
@@ -121,7 +121,7 @@
     		<language ident="LA">
     			<position place="tail" book_orientation="0">
     				<marginalia_text>
-    					philosophus, philautus.
+    					philosophus, philautus. <!--JG: I'd put the ')' after 'piaceuolezze' before 'philosophus' (because the ink matches and it can be done quite easily - i.e. without creating confusion-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -131,7 +131,7 @@
     			<position place="left_margin" book_orientation="90">
     				<marginalia_text>
     					[mih]i vita est, essentia quinta valoris;
-    					s, virtus, praxis multiplicata potens. }
+    					s, virtus, praxis multiplicata potens. } <!--JG: I would put a '[-]' before the 's', since it's likely that some text has disappeared-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -140,8 +140,8 @@
     		<language ident="EN">
     			<position place="right_margin" book_orientation="90">
     				<marginalia_text>
-    					Manie [bigg] [??] are little worth: &amp; manie little men of great valour:
-    					<!-- There appears to be more text beneath, however the page is bent and illegible. -->
+    					Manie [bigg] [??] are little worth: &amp; manie little men of great valour: <!--JG: That word is really tricky. It looks like 'lubbere', but a letter has been inserted above the word? I agree that the word before should be 'bigg'-->
+    					<!-- There appears to be more text beneath, however the page is bent and illegible. --> <!--JG: Shall we use a 'Missing text' comment, so that we can easily find these instances? E.g. MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -157,11 +157,13 @@
     				<marginalia_text>
     					Euschemosyne,    <!-- These do not seem to be names of people, as the first is Greek for "decorum," however I can't figure out "Fronismo," although the Greek root seems easy enough to guess. -->
     					et
-    					Fronismo.
+    					Fronismo. <!--JG: Hmm, no clue either. Leave your comment in the file, we'll get back to it at a later stage. I might draw up a list for Lisa and Anthony (Grafton) to have a look at, at some point-->
     				</marginalia_text>
     			</position>
     		</language>
     	</marginalia>
+		
+		<!--JG: I would also mentioned the numbers Harvey put in the left margin as (individual) marginal notes-->
         
         <!-- Underlines -->
         
@@ -179,17 +181,17 @@
     	<underline method="pen" type="straight" language="IT" text="i suoi uicini"/>
     	<underline method="pen" type="straight" language="IT" text="frate"/>
     	<underline method="pen" type="straight" language="IT" text="ignudo"/>
-    	<underline method="pen" type="straight" language="IT" text="mi riderei molto di"/>
+    	<underline method="pen" type="straight" language="IT" text="mi riderei molto di"/> <!--JG: You might have missed 'no fussi morto'-->
     	<underline method="pen" type="straight" language="IT" text="queste pazzie de' miei"/>
     	<underline method="pen" type="straight" language="IT" text="queste tre donne habbia uinta la"/>
     	<underline method="pen" type="straight" language="IT" text="ingegnose quistioni"/>
     	<underline method="pen" type="straight" language="IT" text="le balie"/>
     	<underline method="pen" type="straight" language="IT" text="cantar delle"/>
     	<underline method="pen" type="straight" language="IT" text="il Pontano"/>
-    	<underline method="pen" type="straight" language="IT" text="mirabilmente"/>
+    	<underline method="pen" type="straight" language="IT" text="mirabilmente"/> <!--JG: You can join this one with 'piaceuole'-->
     	<underline method="pen" type="straight" language="IT" text="piaceuole in esprimere"/>
     	<underline method="pen" type="straight" language="IT" text="d'eloquentia, &amp; di dottrina con"/>
-    	<underline method="pen" type="straight" language="IT" text="egli sia nato solamente"/>
+    	<underline method="pen" type="straight" language="IT" text="egli sia nato solamente"/> <!--JG: You can join this one with 'a'-->
     	<underline method="pen" type="straight" language="IT" text="a"/>
     	<underline method="pen" type="straight" language="IT" text="piaceuolezze"/>
     	
