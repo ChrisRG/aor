@@ -180,7 +180,8 @@
     	<underline method="pen" type="straight" language="IT" text="con gli scherzi tentare"/>
     	<underline method="pen" type="straight" language="IT" text="l'animo del bambino"/>
     	<underline method="pen" type="straight" language="IT" text="la scodella fuor"/>
-    	<underline method="pen" type="straight" language="IT" text="mangia questa pappa"/> <!--JG: I guess you could also include 'tosto, huomo' in an underline tag, even though the ink is less visible-->
+    	<underline method="pen" type="straight" language="IT" text="tosto, huomo"/>
+    	<underline method="pen" type="straight" language="IT" text="mangia questa pappa"/>
     	<underline method="pen" type="straight" language="IT" text="questo bambino non la uuol"/>
     	<underline method="pen" type="straight" language="IT" text="la scodella di"/>
     	<underline method="pen" type="straight" language="IT" text="con terribil grido"/>
