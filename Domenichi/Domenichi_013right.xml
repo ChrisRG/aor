@@ -86,7 +86,7 @@
     				<marginalia_text>
     					) Vita Eutuchi.
     				</marginalia_text>
-    				<person name="Eutuchus"/> <!-- Another creation of Harvey's  -->
+    				<person name="Eutuchus"/> <!-- Another creation of Harvey's  --> <!--JG: Great, you can leave this (and other similar) comments in, this is added (scholarly) value from which end users can benefit-->
     			</position>
     		</language>
     	</marginalia>
@@ -115,7 +115,7 @@
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
     					Continual | emproouement of eueri part. 
-    				</marginalia_text>
+    				</marginalia_text> <!--JG: I'd add chalk emphasis here as well-->
     			</position>
     		</language>
     	</marginalia>
@@ -123,7 +123,7 @@
     		<language ident="IT">
     			<position place="tail" book_orientation="0">
     				<marginalia_text>
-    					)
+    					) <!--JG: You can put this bracket before the other bracket in the marginal note with 'Giulio'-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -142,7 +142,7 @@
     		<language ident="IT">
     			<position place="tail" book_orientation="0">
     				<marginalia_text>
-    					{ Giulio [z:do]
+    					{ Giulio [z:do] <!--JG: I don't know this abbreviation. Have you looked in A. Cappelli, Dizionario di Abbreviature latine ed italiane?-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -151,7 +151,7 @@
     		<language ident="EN">
     			<position place="left_margin" book_orientation="90">
     				<marginalia_text>
-    					Not the talnes, or lownes; but the worthines, or vnworthines ma[ke]s, or marres.
+    					Not the talnes, or lownes; but the worthines, or vnworthines ma[ke]s, or marres. <!--JG: Tricky one, could be 'ke' indeed-->
     				</marginalia_text>
     			</position>
     		</language>
@@ -162,7 +162,7 @@
     				<marginalia_text>
     					Solo mihi vita est, in dictis emphasis; actis
     					Dexteritas; rerum copia; laetus agon. }
-    				</marginalia_text>
+    				</marginalia_text> <!--JG: I'd add chalk emphasis here as well-->
     			</position>
     		</language>
     	</marginalia>
@@ -187,7 +187,7 @@
     	<underline method="pen" type="straight" language="IT" text="con gli scherzi tentare"/>
     	<underline method="pen" type="straight" language="IT" text="l'animo del bambino"/>
     	<underline method="pen" type="straight" language="IT" text="la scodella fuor"/>
-    	<underline method="pen" type="straight" language="IT" text="mangia questa pappa"/>
+    	<underline method="pen" type="straight" language="IT" text="mangia questa pappa"/> <!--JG: I guess you could also include 'tosto, huomo' in an underline tag, even though the ink is less visible-->
     	<underline method="pen" type="straight" language="IT" text="questo bambino non la uuol"/>
     	<underline method="pen" type="straight" language="IT" text="la scodella di"/>
     	<underline method="pen" type="straight" language="IT" text="con terribil grido"/>
@@ -244,7 +244,7 @@
     	<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- magna -->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- Cardi -->
-    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- mettere al -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- mettere al --> <!--JG: I think this dash is printed, and not added by Harvey-->
     	<mark name="dash" method="pen" place="right_margin"/> <!-- fio -->
     	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Sisto -->
     	
