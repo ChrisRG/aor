@@ -61,6 +61,7 @@
 <!ENTITY ocirc "Ô">
 <!ENTITY euml "ë">
 <!ENTITY igrave "ì">
+<!ENTITY icirc "î">
 <!ENTITY ugrave "ù">
 ]
 >
@@ -111,7 +112,7 @@
     		<language ident="LA">
     			<position place="intext" book_orientation="0">
     				<marginalia_text>
-    					Caesaris, et Alexandri φιλοπρωτία in omni ge <!-- Unable to read due to bent page -->  <!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+    					Caesaris, et Alexandri φιλοπρωτία in omni ge[-] <!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
     				</marginalia_text>
     				<person name="Julius Caesar"/>
     				<person name="Alexander the Great"/>
@@ -124,7 +125,7 @@
     				<marginalia_text>
     					Borgiae Emblema: Aut Caesar aut nihil.
     				</marginalia_text>
-    				<person name="Borgia"/> <!-- Not sure how to mark this, since it is the family and a not a specific member. --> <!--JG: Good point, I think we should just use Borgia if it denotes the family, and including first names if Harvey speaks about a particular family member-->
+    				<person name="Borgia"/> 
     			</position>
     		</language>
     	</marginalia>
@@ -134,7 +135,7 @@
     				<marginalia_text>
     					Ecc&egrave; elogiu[m] Iouij: Icon Guicciar.
     				</marginalia_text>
-    				<person name="Jove"/> <!--JG: Better tag as Jupiter, perhaps?-->
+    				<person name="Jupiter"/>
     				<person name="Francesco Guicciardini"/>
     			</position>
     		</language>
@@ -155,14 +156,14 @@
     			<position place="left_margin" book_orientation="90">
     				<marginalia_text>
     					{ Sola mihi vita est, verbis, factisq[ue] praeire;
-    					Anticipare omnes; summa parare breu&ecirc;. } <!--JG: Should this not be î instead of ê?-->
+    					Anticipare omnes; summa parare breu&icirc;. } 
     				</marginalia_text>
     				<emphasis method="chalk"/>
     			</position>
     		</language>
     	</marginalia>
     	
-    	<!-- The right margin is illegibile due to the scan and the fold in the page. --> <!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+	<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
     	
         
         <!-- Underlines -->
