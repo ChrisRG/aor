@@ -1,0 +1,258 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<!-- Updated 10/10/2014 -->
+
+<!DOCTYPE transcription [
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY eacute "é">
+<!ENTITY egrave "è">
+<!ENTITY ecirc "ê">
+<!ENTITY ograve "ò">
+<!ENTITY ocirc "Ô">
+<!ENTITY euml "ë">
+<!ENTITY igrave "ì">
+<!ENTITY ugrave "ù">
+]
+>
+
+<transcription>
+
+	<page filename="Ha2.012r" pagination="343" reader="Harvey"/>	<!-- ABO  16right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="head" book_orientation="0">
+    					<marginalia_text>
+    						necessitas artium, philosophiae, professionum.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="head" book_orientation="0">
+    					<marginalia_text>
+    						Tergemina Anchora.	
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Euscopi fundamentu[m] adama[n]tinum.
+    					</marginalia_text>
+    					<person name="Euscopus"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						amoroso, e ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						| Summae artium, Summae Summaru[m].
+    						Aurea basis totius valoris: et propriae fortunae commune columen.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						argut&egrave;.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						) Non plus est 
+    						multis vitis: sed vna exquisit&egrave; composita; absolut&egrave; digesta;
+    						praesentiq[ue] mundo aptissim&egrave; accommodata.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Vnico in quaq[ue] classe adhaerendu[m]: et obseruandi excellentiss[imi].	<!-- Unsure about case of abbreviated word. --> 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="90">
+    					<marginalia_text>
+    						Nullius ille spei, qui nondum intelligit artes, 
+    						cum gemina sophia, tergemin[o]q[ue] scop[o]. }	<!-- Unclear about marks about the O in tergeminoque and scopo. -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+        
+	    	<!-- Underlines -->
+	        
+	    	<underline method="pen" type="straight" text="cominci&ocirc; a tentarla"/>
+    		<underline method="pen" type="straight" text="marauigliatasi"/>
+    		<underline method="pen" type="straight" text="della novit&agrave; di questa"/>
+    		<underline method="pen" type="straight" text="diuezza d'usare col marito"/>
+    		<underline method="pen" type="straight" text="accorta, &amp; pronta"/>
+    		<underline method="pen" type="straight" text="conosciuta la"/>
+    		<underline method="pen" type="straight" text="cagione della"/>
+    		<underline method="pen" type="straight" text="gli consent&igrave;"/>
+    		<underline method="pen" type="straight" text="con patto"/>
+    		<underline method="pen" type="straight" text="andasse prima a pisciare"/>
+    		<underline method="pen" type="straight" text="mosso da uano, &amp; concupiscibile"/>
+    		<underline method="pen" type="straight" text="allhora di uerno"/>
+    		<underline method="pen" type="straight" text="freddo"/>
+    		<underline method="pen" type="straight" text="uoto"/>
+    		<underline method="pen" type="straight" text="hebbe la vescica"/>
+    		<underline method="pen" type="straight" text="potissima cagione"/>
+    		<underline method="pen" type="straight" text="il capo in superbia"/>
+    		<underline method="pen" type="straight" text="sopragiugnendolo il freddo"/>
+    		<underline method="pen" type="straight" text="tentatione gli usc&igrave; delle reni"/>
+    		<underline method="pen" type="straight" text="uolse la schiena alla moglie"/>
+    		<underline method="pen" type="straight" text="salita in zurlo"/>
+    		<underline method="pen" type="straight" text="maneggiando il petto, &amp; l'altre membra del"/>
+    		<underline method="pen" type="straight" text="solecitare, che desse effetto al desiderio"/>
+    		<underline method="pen" type="straight" text="no[n] mouendosi egli"/>
+    		<underline method="pen" type="straight" text="ogni altra cosa piu tosto haurebbe"/>
+    		<underline method="pen" type="straight" text="marito mio dolce, or non uolete"/>
+    		<underline method="pen" type="straight" text="una lancia"/>
+    		<underline method="pen" type="straight" text="moglie mia cara"/>
+    		<underline method="pen" type="straight" text="perdete voi tempo"/>
+    		<underline method="pen" type="straight" text="uada a cacare"/>
+    		<underline method="pen" type="straight" text="a ridere"/>
+    		<underline method="pen" type="straight" text="uolgendosi"/>
+    		<underline method="pen" type="straight" text="Battista Giraldi"/>
+    		<underline method="pen" type="straight" text="sarei io, qua[n]do io fusse teco"/>
+    		<underline method="pen" type="straight" text="sauio"/>
+    			
+    			
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="SS" place="tail"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- consen -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ma -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- compiac -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- grandissi -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- su -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- desi -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Soggiun -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- acco[m]pagnar -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ri -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- sauio.] -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- marauigliatasi: this mark is ambiguous -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- se ... re -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- lo... spose -->
+		 
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="pronta"/>
+    		<mark name="equal_sign" method="pen" place="intext" language="IT" text="cagione"/>
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- con patto -->
+    		<mark name="equal_sign" method="pen" place="intext" language="IT" text="cagione"/>
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- il capo in su -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- perbia, sopragiugnendolo -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- aere, subito -->
+    		<mark name="plus_sign" method="pen" place="intext" /> <!-- il petto -->
+    		<mark name="plus_sign" method="pen" place="intext" /> <!-- ogni altra -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- fare, la -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="perdete"/>
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- a cacare -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- a ride -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- litterato, vole[n]do -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- solo sarei -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- teco -->
+    		<mark name="plus_sign" method="pen" place="intext" /> <!-- motto sauio -->
+    		
+    		<mark name="dot" method="pen" place="tail"/> <!-- beside SS symbol -->
+    		
+
+    </annotation>
+</transcription>

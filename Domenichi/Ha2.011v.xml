@@ -1,0 +1,234 @@
+<?xml version="1.0" standalone="yes" ?>
+
+<!-- Updated 10/10/2014 -->
+
+<!DOCTYPE transcription [
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY eacute "é">
+<!ENTITY egrave "è">
+<!ENTITY ecirc "ê">
+<!ENTITY ograve "ò">
+<!ENTITY ocirc "Ô">
+<!ENTITY euml "ë">
+<!ENTITY igrave "ì">
+<!ENTITY ugrave "ù">
+]
+>
+
+<transcription>
+
+	<page filename="Ha2.011v.tif" pagination="342" reader="Harvey"/>	<!-- ABO  16left -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Haec etiam Penelope [suam] habet rationem: sed fragilem.
+                    				</marginalia_text>
+        					<person name="Penelope"/>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Vita Eudromi iteru[m].
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						. Ingen&ugrave;e.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						( Adhuc citius. 	<!-- There appears to be a mark over the S in citius, unsure of how to record -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						bona fide dictum: sed mala fide factum.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						( Passionis ratio, non rationis. ) 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Omnes vitae, 
+    						tria sunt verba, scientia, virtus, et hinc foelicitas: aut
+    						his contraria. In genere, spetie, indiuiduo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Ars, virtus, praxis, merus aether, spiritus, ignis,
+    						vitarum effigies vnica, vita mea est. }
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="90">
+    					<marginalia_text>
+    						Plus valet vnus Optimus, vel auctor, vel actor, qu&agrave;m centum mediocres.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		
+    		
+        
+	    	<!-- Underlines -->
+	        
+	    	<underline method="pen" type="straight" text="questo essere possibile"/>
+    		<underline method="pen" type="straight" text="esempio anchor uiuo esser"/>
+    		<underline method="pen" type="straight" text="per uent'anni almeno"/>
+    		<underline method="pen" type="straight" text="innamorato d'una sua cittadina"/>
+    		<underline method="pen" type="straight" text="quei due, che haueua"/>
+    		<underline method="pen" type="straight" text="ella sia d'essa"/>
+    		<underline method="pen" type="straight" text="esser certa"/>
+    		<underline method="pen" type="straight" text="diedero a ridere"/>
+    		<underline method="pen" type="straight" text="detto la bugia"/>
+    		<underline method="pen" type="straight" text="come colta ne' suoi propri lacci"/>
+    		<underline method="pen" type="straight" text="ne sapesse uscire"/>
+    		<underline method="pen" type="straight" text="ci uccell&ograve; tutti"/>
+    		<underline method="pen" type="straight" text="non era dessa"/>
+    		<underline method="pen" type="straight" text="ella era pur lei"/>
+    		<underline method="pen" type="straight" text="sono cosi sciocca; che"/>
+    		<underline method="pen" type="straight" text="lasciassi giamai"/>
+    		<underline method="pen" type="straight" text="innamorato"/>
+    		<underline method="pen" type="straight" text="tormentarsi"/>
+    		<underline method="pen" type="straight" text="con mio si gran danno"/>
+    		<underline method="pen" type="straight" text="astretti crederle l'una &amp;"/>
+    		<underline method="pen" type="straight" text="altra cosa"/>
+    		<underline method="pen" type="straight" text="singolar dolcezza"/>
+    		<underline method="pen" type="straight" text="del sangue Bolognese"/>
+    		<underline method="pen" type="straight" text="molto uecchio"/>
+    		<underline method="pen" type="straight" text="in letto con la moglie"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	        
+	    	<symbol name="Sun" place="left_margin"/>
+    		<symbol name="SS" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- cit -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- gentildon -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- opi -->
+    		<mark name="bracket" method="pen" place="right_margin"/> <!-- la- ... cosa. -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- dolcez -->
+	    	
+	    	<!-- Left margin -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- che ... tutta -->
+		    
+	    	<!-- Intext -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- possibile, &  -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- amanti, o -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- uccello -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- cosi -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- innamorato tormentarsi -->
+
+    </annotation>
+</transcription>
