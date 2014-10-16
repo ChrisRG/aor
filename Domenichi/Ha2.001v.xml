@@ -39,7 +39,7 @@
             <language ident="LA">
                 <position place="intext" book_orientation="0">
                     <marginalia_text>
-                    Interpocula, aut epulas nunq[ue] hebetior Eutrapelus, <!--JG: I think it should be 'nunq[uam]' instead of nunq[ue], don't you think?-->
+                    Interpocula, aut epulas nunq[uam] hebetior Eutrapelus,
                     </marginalia_text>
                     <person name="Eutrapelus"/>
                 </position>
