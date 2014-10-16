@@ -74,10 +74,10 @@
     		<language ident="LA">
     			<position place="head" book_orientation="0">
     				<marginalia_text>
-    					Vita Chrystotechni. 
+    					Vita Chrysotechni. 
     					(nidus phoenicis: plenus aromatum Orientis (.) 
     				</marginalia_text>
-    				<person name="Chrystotechnus"/>
+    				<person name="Chrysotechnus"/>
     			</position>
     		</language>
     	</marginalia>
