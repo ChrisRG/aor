@@ -102,7 +102,7 @@
                        Goffredo di Tasso.
                     </marginalia_text>
                     <person name="Torquato Tasso"/>
-                    <person name="Jerusalem Delivered"/> <!-- I believe this might be a reference to Tasso's poem, rather than to the person. It was originally published under the name "Il Goffredo." -->
+                    <person name="Jerusalem Delivered"/> <!-- I believe this might be a reference to Tasso's poem, rather than to the person. It was originally published under the name "Il Goffredo." --> <!--JG: If this is the case, you should use the book rather than the person tag-->
                 </position>
             </language>
         </marginalia>
