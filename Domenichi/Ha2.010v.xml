@@ -188,7 +188,7 @@
     		</marginalia>
 	        
 	       
-    		<!-- Underlines -->
+    		<!-- Underlines --> <!--JG: Chris, if text attribute is used, language attribute should be used as well! Also please check your other files for this!-->
 	        
 	        	<underline method="pen" type="straight" text="sono il piu magnifico"/>
     		<underline method="pen" type="straight" text="Cancelliere cosi ricco"/>
