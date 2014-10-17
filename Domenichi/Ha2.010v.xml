@@ -204,7 +204,7 @@
     		<underline method="pen" type="straight" text="ben serue, &amp; tace"/>
     		<underline method="pen" type="straight" text="il Gallo"/>
     		<underline method="pen" type="straight" text="caualli belli"/>
-    		<underline method="pen" type="straight" text="grandi mangiauano"/>
+    		<underline method="pen" type="straight" text="grandi mangiauano"/> <!--JG: You forgot 'salui fratelli'-->
     		<underline method="pen" type="straight" text="contenti, che io mangi con esso uoi"/>
     		<underline method="pen" type="straight" text="ueggo cadere"/>
     		<underline method="pen" type="straight" text="senza alcun danno della"/>
@@ -246,7 +246,7 @@
 	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- Cancelliere cosi -->
     		<mark name="dot" method="pen" place="intext"/> <!-- speranza, cre -->
     		<mark name="quotation_mark" method="pen" place="intext"/> <!-- uccellati -->
-    		<mark name="apostrophe" method="pen" place="intext"/> <!-- tutta: This mark looks it could be anything. -->
+    		<mark name="apostrophe" method="pen" place="intext"/> <!-- tutta: This mark looks it could be anything. --> <!--JG: I agree; tagging it as an apostrophe is fine!-->
     		<mark name="quotation_mark" method="pen" place="intext"/> <!-- amici -->
     		<mark name="dot" method="pen" place="intext"/> <!-- Assai: dotted i -->
     		<mark name="plus_sign" method="pen" place="intext"/> <!-- ben ser -->
