@@ -98,7 +98,8 @@
     			<language ident="LA">
     				<position place="intext" book_orientation="0">
     					<marginalia_text>
-    						Euscopum oportet esse [e]uheiticum.
+    						Euscopum oportet esse [e]uheiticum. <!--JG: Strange word?!-->
+    						<!--JG: Should you not tag Euscopus?-->
     					</marginalia_text>    					
     				</position>
     			</language>
@@ -154,8 +155,9 @@
     			</language>
     		</marginalia>
         
+        <!--JG: I think you forgot the marginal note starting with 'habituata'-->
         
-	    	<!-- Underlines -->
+	    	<!-- Underlines --> <!--JG: also use the language attribute-->
 	        
 	    	<underline method="pen" type="straight" text="Innacquaua"/>
     		<underline method="pen" type="straight" text="Signore auaro"/>

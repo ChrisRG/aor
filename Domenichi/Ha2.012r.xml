@@ -117,7 +117,7 @@
     				<position place="intext" book_orientation="0">
     					<marginalia_text>
     						| Summae artium, Summae Summaru[m].
-    						Aurea basis totius valoris: et propriae fortunae commune columen.
+    						Aurea basis totius valoris: et propriae fortunae commune columen. <!--JG: I'd transcribe this as propria[e] fortuna[e] et cetera, since the 'e' has been substituted by a sort of apostrophe. This 'rule' should also be applied to other, similar cases-->
     					</marginalia_text>
     				</position>
     			</language>
@@ -158,14 +158,14 @@
     				<position place="right_margin" book_orientation="90">
     					<marginalia_text>
     						Nullius ille spei, qui nondum intelligit artes, 
-    						cum gemina sophia, tergemin[o]q[ue] scop[o]. }	<!-- Unclear about marks about the O in tergeminoque and scopo. -->
+    						cum gemina sophia, tergemin[o]q[ue] scop[o]. }	<!-- Unclear about marks about the O in tergeminoque and scopo. --> <!--JG: I don't think you need to capture these marks-->
     					</marginalia_text>
     				</position>
     			</language>
     		</marginalia>
         
         
-	    	<!-- Underlines -->
+    		<!-- Underlines --> <!--JG: use language attribute as well!-->
 	        
 	    	<underline method="pen" type="straight" text="cominci&ocirc; a tentarla"/>
     		<underline method="pen" type="straight" text="marauigliatasi"/>
@@ -200,6 +200,7 @@
     		<underline method="pen" type="straight" text="a ridere"/>
     		<underline method="pen" type="straight" text="uolgendosi"/>
     		<underline method="pen" type="straight" text="Battista Giraldi"/>
+    		<!--JG: si solo is underlined as well -->
     		<underline method="pen" type="straight" text="sarei io, qua[n]do io fusse teco"/>
     		<underline method="pen" type="straight" text="sauio"/>
     			
@@ -228,7 +229,7 @@
     		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- sauio.] -->
 	    	
 	    	<!-- Left margin -->
-	    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- marauigliatasi: this mark is ambiguous -->
+	    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- marauigliatasi: this mark is ambiguous --> <!--JG: Agreed, but I think you're right to tag it as a straight_quotation_mark-->
     		<mark name="bracket" method="pen" place="left_margin"/> <!-- se ... re -->
     		<mark name="bracket" method="pen" place="left_margin"/> <!-- lo... spose -->
 		 

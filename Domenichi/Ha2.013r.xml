@@ -79,7 +79,7 @@
         			<language ident="LA">
             			               <position place="head" book_orientation="0">
                     				<marginalia_text>
-                    					Animus, imperator Corporis, et fortunae.
+                    					Animus, imperator Corporis, et fortunae. <!--JG: I'd transcribe it as fortuna[e]-->
                     				</marginalia_text>
             			               	<emphasis method="chalk"/>
             			               </position>
@@ -165,15 +165,15 @@
     			<language ident="LA">
     				<position place="right_margin" book_orientation="270">
     					<marginalia_text>
-    						Vilis animus est, qui non dominatur corpori. Magnus animus, ide[o]q[ue]	<!-- I don't quite understand why there's an acute accent above "ideoque." -->
-    						tranquilius illud, tam Corpori imperat, qu&agrave;m fortunae aegru[m]; quantumcunq[ue] aut haec aut afflict[a].	<!-- The position of various elements in this sentence is strange, should I record certain words as "intext"? -->
+    						Vilis animus est, qui non dominatur corpori. Magnus animus, ide[o]q[ue]	<!-- I don't quite understand why there's an acute accent above "ideoque." --> <!--JG: Don't have a clue, but best transcribe it as ideóq[ue] (and add the ó to the DTD)-->
+    						tranquilius illud, tam Corpori imperat, qu&agrave;m fortunae aegru[m]; quantumcunq[ue] aut haec aut afflict[a].	<!-- The position of various elements in this sentence is strange, should I record certain words as "intext"? --> <!--We could, if we want to be extremely precise, but I'm OK with leaving it as it is-->
     					</marginalia_text>
     					<emphasis method="chalk"/>
     				</position>
     			</language>
     		</marginalia>
         
-	    	<!-- Underlines -->
+	    	<!-- Underlines --> <!--JG: use of language attribute-->
 	        
 	    	<underline method="pen" type="straight" text="scarpe Pontificali"/>
     		<underline method="pen" type="straight" text="giudicandole strette"/>
@@ -218,9 +218,11 @@
     		<mark name="dash" method="pen" place="right_margin"/> <!-- pan -->
     		<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
     		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- feste -->
+    		<!--JG: I think there's a dash here as well, after 'dis'-->
     		<mark name="comma" method="pen" place="right_margin"/> <!-- scherzo -->
     		<mark name="dash" method="pen" place="right_margin"/> <!-- co[n] -->
     		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- honore --> 
+    		<!--JG: I think there's a dash here as well, after 'paz'-->
 	    	
 	    	<!-- Left margin -->
 	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- bene ... pa -->
@@ -229,7 +231,7 @@
 		    
 	    	<!-- Intext -->
 	    	<mark name="dot" method="pen" place="intext"/> <!-- piede, disse: -->
-    		<mark name="dot" method="pen" place="intext"/> <!-- following SS symbol -->
-
+    		<mark name="dot" method="pen" place="intext"/> <!-- following SS symbol --> <!--JG: I think we shouldn't tag these dots but just see them as belonging to the mark symbol-->
+			<!--JG: Dot above the 'i' of 'egli'-->
     </annotation>
 </transcription>
