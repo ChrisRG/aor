@@ -1,72 +1,6 @@
-<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="no" ?>
 
-<!-- Updated 10/10/2014 -->
-
-<!DOCTYPE transcription [
-<!ELEMENT transcription (page, annotation)>
-<!ELEMENT page EMPTY>
-	<!ATTLIST page filename CDATA #REQUIRED>
-	<!ATTLIST page pagination CDATA #IMPLIED>
-	<!ATTLIST page signature CDATA #IMPLIED>
-	<!ATTLIST page reader CDATA #REQUIRED>
-	
-<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
-	<!ELEMENT marginalia (language*, translation?)>
-	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
-	<!ATTLIST marginalia date CDATA #IMPLIED>
-	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
-	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
-	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
-	 	<!ELEMENT language (position*)>
-			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
-				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
-					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
-					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
-						<!ELEMENT marginalia_text (#PCDATA)>
-						<!ELEMENT person EMPTY>
-							<!ATTLIST person name CDATA #REQUIRED>
-						<!ELEMENT book EMPTY>
-							<!ATTLIST book title CDATA #REQUIRED>
-						<!ELEMENT location EMPTY>
-							<!ATTLIST location name CDATA #REQUIRED>
-						<!ELEMENT X-ref EMPTY>
-							<!ATTLIST X-ref person CDATA #REQUIRED>
-							<!ATTLIST X-ref book_title CDATA #REQUIRED>
-						<!ELEMENT emphasis EMPTY> 
-							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
-							<!ATTLIST emphasis text CDATA #IMPLIED>
-		<!ELEMENT translation (#PCDATA)>
-	<!ELEMENT underline EMPTY>
-		<!ATTLIST underline method (chalk|pen) #REQUIRED>
-		<!ATTLIST underline type (straight|curved) #REQUIRED>
-		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST underline text CDATA #IMPLIED> 
-	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
-		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST symbol text CDATA #IMPLIED>
-	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
-		<!ATTLIST mark method (chalk|pen) #REQUIRED>
-		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST mark text CDATA #IMPLIED>
-			
-			
-<!ENTITY agrave "à">
-<!ENTITY aacute "á">
-<!ENTITY atiled "ã">
-<!ENTITY eacute "é">
-<!ENTITY egrave "è">
-<!ENTITY ecirc "ê">
-<!ENTITY ograve "ò">
-<!ENTITY ocirc "Ô">
-<!ENTITY euml "ë">
-<!ENTITY igrave "ì">
-<!ENTITY ugrave "ù">
-]
->
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
 
 <transcription>
 
@@ -79,7 +13,7 @@
         			<language ident="LA">
             			               <position place="head" book_orientation="0">
                     				<marginalia_text>
-                    					Animus, imperator Corporis, et fortunae. <!--JG: I'd transcribe it as fortuna[e]-->
+                    					Animus, imperator Corporis, et fortuna[e].
                     				</marginalia_text>
             			               	<emphasis method="chalk"/>
             			               </position>
@@ -165,45 +99,45 @@
     			<language ident="LA">
     				<position place="right_margin" book_orientation="270">
     					<marginalia_text>
-    						Vilis animus est, qui non dominatur corpori. Magnus animus, ide[o]q[ue]	<!-- I don't quite understand why there's an acute accent above "ideoque." --> <!--JG: Don't have a clue, but best transcribe it as ideóq[ue] (and add the ó to the DTD)-->
-    						tranquilius illud, tam Corpori imperat, qu&agrave;m fortunae aegru[m]; quantumcunq[ue] aut haec aut afflict[a].	<!-- The position of various elements in this sentence is strange, should I record certain words as "intext"? --> <!--We could, if we want to be extremely precise, but I'm OK with leaving it as it is-->
+    						Vilis animus est, qui non dominatur corpori. Magnus animus, ide&oacute;q[ue]	
+    						tranquilius illud, tam Corpori imperat, qu&agrave;m fortunae aegru[m]; quantumcunq[ue] aut haec aut afflict[a].
     					</marginalia_text>
     					<emphasis method="chalk"/>
     				</position>
     			</language>
     		</marginalia>
         
-	    	<!-- Underlines --> <!--JG: use of language attribute-->
+	    	<!-- Underlines -->
 	        
-	    	<underline method="pen" type="straight" text="scarpe Pontificali"/>
-    		<underline method="pen" type="straight" text="giudicandole strette"/>
-    		<underline method="pen" type="straight" text="non fu mai scarpa, che mi calzasse meglio"/>
-    		<underline method="pen" type="straight" text="giovani"/>
-    		<underline method="pen" type="straight" text="amici miei"/>
-    		<underline method="pen" type="straight" text="sul canto"/>
-    		<underline method="pen" type="straight" text="Zoppo da amendue"/>
-    		<underline method="pen" type="straight" text="caminaua forte a piu"/>
-    		<underline method="pen" type="straight" text="hor con l'una, &amp; hora con"/>
-    		<underline method="pen" type="straight" text="spalla battesse"/>
-    		<underline method="pen" type="straight" text="co[m]pagni il piu faceto"/>
-    		<underline method="pen" type="straight" text="quello"/>
-    		<underline method="pen" type="straight" text="che festa &egrave; domani"/>
-    		<underline method="pen" type="straight" text="cura di feste"/>
-    		<underline method="pen" type="straight" text="uoi sonate cosi forte a doppio"/>
-    		<underline method="pen" type="straight" text="difetti naturali non"/>
-    		<underline method="pen" type="straight" text="scherzo"/>
-    		<underline method="pen" type="straight" text="tosto compassione"/>
-    		<underline method="pen" type="straight" text="empio &egrave; chi"/>
-    		<underline method="pen" type="straight" text="feste in Fiorenza"/>
-    		<underline method="pen" type="straight" text="tessitor di lana"/>
-    		<underline method="pen" type="straight" text="horreuolmente a gli spettacoli"/>
-    		<underline method="pen" type="straight" text="moglie con"/>
-    		<underline method="pen" type="straight" text="spendeua troppo, &amp; rimarrebbono poueri"/>
-    		<underline method="pen" type="straight" text="che per farmi honore ti metterei in chiasso"/>
-    		<underline method="pen" type="straight" text="Parola libera"/>
-    		<underline method="pen" type="straight" text="semplicemente"/>
-    		<underline method="pen" type="straight" text="una frotta di giouani"/>
-    		<underline method="pen" type="straight" text="andauano pazzeggiando per"/>
+    		<underline method="pen" type="straight" language="IT" text="scarpe Pontificali"/>
+    		<underline method="pen" type="straight" language="IT" text="giudicandole strette"/>
+    		<underline method="pen" type="straight" language="IT" text="non fu mai scarpa, che mi calzasse meglio"/>
+    		<underline method="pen" type="straight" language="IT" text="giovani"/>
+    		<underline method="pen" type="straight" language="IT" text="amici miei"/>
+    		<underline method="pen" type="straight" language="IT" text="sul canto"/>
+    		<underline method="pen" type="straight" language="IT" text="Zoppo da amendue"/>
+    		<underline method="pen" type="straight" language="IT" text="caminaua forte a piu"/>
+    		<underline method="pen" type="straight" language="IT" text="hor con l'una, &amp; hora con"/>
+    		<underline method="pen" type="straight" language="IT" text="spalla battesse"/>
+    		<underline method="pen" type="straight" language="IT" text="co[m]pagni il piu faceto"/>
+    		<underline method="pen" type="straight" language="IT" text="quello"/>
+    		<underline method="pen" type="straight" language="IT" text="che festa &egrave; domani"/>
+    		<underline method="pen" type="straight" language="IT" text="cura di feste"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi sonate cosi forte a doppio"/>
+    		<underline method="pen" type="straight" language="IT" text="difetti naturali non"/>
+    		<underline method="pen" type="straight" language="IT" text="scherzo"/>
+    		<underline method="pen" type="straight" language="IT" text="tosto compassione"/>
+    		<underline method="pen" type="straight" language="IT" text="empio &egrave; chi"/>
+    		<underline method="pen" type="straight" language="IT" text="feste in Fiorenza"/>
+    		<underline method="pen" type="straight" language="IT" text="tessitor di lana"/>
+    		<underline method="pen" type="straight" language="IT" text="horreuolmente a gli spettacoli"/>
+    		<underline method="pen" type="straight" language="IT" text="moglie con"/>
+    		<underline method="pen" type="straight" language="IT" text="spendeua troppo, &amp; rimarrebbono poueri"/>
+    		<underline method="pen" type="straight" language="IT" text="che per farmi honore ti metterei in chiasso"/>
+    		<underline method="pen" type="straight" language="IT" text="Parola libera"/>
+    		<underline method="pen" type="straight" language="IT" text="semplicemente"/>
+    		<underline method="pen" type="straight" language="IT" text="una frotta di giouani"/>
+    		<underline method="pen" type="straight" language="IT" text="andauano pazzeggiando per"/>
     	
 	       
 	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
@@ -218,11 +152,11 @@
     		<mark name="dash" method="pen" place="right_margin"/> <!-- pan -->
     		<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
     		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- feste -->
-    		<!--JG: I think there's a dash here as well, after 'dis'-->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- dis -->    		
     		<mark name="comma" method="pen" place="right_margin"/> <!-- scherzo -->
     		<mark name="dash" method="pen" place="right_margin"/> <!-- co[n] -->
     		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- honore --> 
-    		<!--JG: I think there's a dash here as well, after 'paz'-->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- paz -->
 	    	
 	    	<!-- Left margin -->
 	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- bene ... pa -->
@@ -231,7 +165,7 @@
 		    
 	    	<!-- Intext -->
 	    	<mark name="dot" method="pen" place="intext"/> <!-- piede, disse: -->
-    		<mark name="dot" method="pen" place="intext"/> <!-- following SS symbol --> <!--JG: I think we shouldn't tag these dots but just see them as belonging to the mark symbol-->
-			<!--JG: Dot above the 'i' of 'egli'-->
+    		<mark name="dot" method="pen" place="intext"/> <!-- above egli -->
+		
     </annotation>
 </transcription>

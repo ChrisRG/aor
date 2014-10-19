@@ -1,72 +1,6 @@
-<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="no" ?>
 
-<!-- Updated 10/10/2014 -->
-
-<!DOCTYPE transcription [
-<!ELEMENT transcription (page, annotation)>
-<!ELEMENT page EMPTY>
-	<!ATTLIST page filename CDATA #REQUIRED>
-	<!ATTLIST page pagination CDATA #IMPLIED>
-	<!ATTLIST page signature CDATA #IMPLIED>
-	<!ATTLIST page reader CDATA #REQUIRED>
-	
-<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
-	<!ELEMENT marginalia (language*, translation?)>
-	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
-	<!ATTLIST marginalia date CDATA #IMPLIED>
-	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
-	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
-	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
-	 	<!ELEMENT language (position*)>
-			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
-				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
-					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
-					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
-						<!ELEMENT marginalia_text (#PCDATA)>
-						<!ELEMENT person EMPTY>
-							<!ATTLIST person name CDATA #REQUIRED>
-						<!ELEMENT book EMPTY>
-							<!ATTLIST book title CDATA #REQUIRED>
-						<!ELEMENT location EMPTY>
-							<!ATTLIST location name CDATA #REQUIRED>
-						<!ELEMENT X-ref EMPTY>
-							<!ATTLIST X-ref person CDATA #REQUIRED>
-							<!ATTLIST X-ref book_title CDATA #REQUIRED>
-						<!ELEMENT emphasis EMPTY> 
-							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
-							<!ATTLIST emphasis text CDATA #IMPLIED>
-		<!ELEMENT translation (#PCDATA)>
-	<!ELEMENT underline EMPTY>
-		<!ATTLIST underline method (chalk|pen) #REQUIRED>
-		<!ATTLIST underline type (straight|curved) #REQUIRED>
-		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST underline text CDATA #IMPLIED> 
-	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
-		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST symbol text CDATA #IMPLIED>
-	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
-		<!ATTLIST mark method (chalk|pen) #REQUIRED>
-		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST mark text CDATA #IMPLIED>
-			
-			
-<!ENTITY agrave "à">
-<!ENTITY aacute "á">
-<!ENTITY atiled "ã">
-<!ENTITY eacute "é">
-<!ENTITY egrave "è">
-<!ENTITY ecirc "ê">
-<!ENTITY ograve "ò">
-<!ENTITY ocirc "Ô">
-<!ENTITY euml "ë">
-<!ENTITY igrave "ì">
-<!ENTITY ugrave "ù">
-]
->
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
 
 <transcription>
 
@@ -117,7 +51,7 @@
     				<position place="intext" book_orientation="0">
     					<marginalia_text>
     						| Summae artium, Summae Summaru[m].
-    						Aurea basis totius valoris: et propriae fortunae commune columen. <!--JG: I'd transcribe this as propria[e] fortuna[e] et cetera, since the 'e' has been substituted by a sort of apostrophe. This 'rule' should also be applied to other, similar cases-->
+    						Aurea basis totius valoris: et propria[e] fortuna[e] commune columen.
     					</marginalia_text>
     				</position>
     			</language>
@@ -158,51 +92,51 @@
     				<position place="right_margin" book_orientation="90">
     					<marginalia_text>
     						Nullius ille spei, qui nondum intelligit artes, 
-    						cum gemina sophia, tergemin[o]q[ue] scop[o]. }	<!-- Unclear about marks about the O in tergeminoque and scopo. --> <!--JG: I don't think you need to capture these marks-->
+    						cum gemina sophia, tergemin[o]q[ue] scop[o]. }
     					</marginalia_text>
     				</position>
     			</language>
     		</marginalia>
         
         
-    		<!-- Underlines --> <!--JG: use language attribute as well!-->
+    		<!-- Underlines -->
 	        
-	    	<underline method="pen" type="straight" text="cominci&ocirc; a tentarla"/>
-    		<underline method="pen" type="straight" text="marauigliatasi"/>
-    		<underline method="pen" type="straight" text="della novit&agrave; di questa"/>
-    		<underline method="pen" type="straight" text="diuezza d'usare col marito"/>
-    		<underline method="pen" type="straight" text="accorta, &amp; pronta"/>
-    		<underline method="pen" type="straight" text="conosciuta la"/>
-    		<underline method="pen" type="straight" text="cagione della"/>
-    		<underline method="pen" type="straight" text="gli consent&igrave;"/>
-    		<underline method="pen" type="straight" text="con patto"/>
-    		<underline method="pen" type="straight" text="andasse prima a pisciare"/>
-    		<underline method="pen" type="straight" text="mosso da uano, &amp; concupiscibile"/>
-    		<underline method="pen" type="straight" text="allhora di uerno"/>
-    		<underline method="pen" type="straight" text="freddo"/>
-    		<underline method="pen" type="straight" text="uoto"/>
-    		<underline method="pen" type="straight" text="hebbe la vescica"/>
-    		<underline method="pen" type="straight" text="potissima cagione"/>
-    		<underline method="pen" type="straight" text="il capo in superbia"/>
-    		<underline method="pen" type="straight" text="sopragiugnendolo il freddo"/>
-    		<underline method="pen" type="straight" text="tentatione gli usc&igrave; delle reni"/>
-    		<underline method="pen" type="straight" text="uolse la schiena alla moglie"/>
-    		<underline method="pen" type="straight" text="salita in zurlo"/>
-    		<underline method="pen" type="straight" text="maneggiando il petto, &amp; l'altre membra del"/>
-    		<underline method="pen" type="straight" text="solecitare, che desse effetto al desiderio"/>
-    		<underline method="pen" type="straight" text="no[n] mouendosi egli"/>
-    		<underline method="pen" type="straight" text="ogni altra cosa piu tosto haurebbe"/>
-    		<underline method="pen" type="straight" text="marito mio dolce, or non uolete"/>
-    		<underline method="pen" type="straight" text="una lancia"/>
-    		<underline method="pen" type="straight" text="moglie mia cara"/>
-    		<underline method="pen" type="straight" text="perdete voi tempo"/>
-    		<underline method="pen" type="straight" text="uada a cacare"/>
-    		<underline method="pen" type="straight" text="a ridere"/>
-    		<underline method="pen" type="straight" text="uolgendosi"/>
-    		<underline method="pen" type="straight" text="Battista Giraldi"/>
-    		<!--JG: si solo is underlined as well -->
-    		<underline method="pen" type="straight" text="sarei io, qua[n]do io fusse teco"/>
-    		<underline method="pen" type="straight" text="sauio"/>
+    		<underline method="pen" type="straight" language="IT" text="cominci&ograve; a tentarla"/>
+    		<underline method="pen" type="straight" language="IT" text="marauigliatasi"/>
+    		<underline method="pen" type="straight" language="IT" text="della novit&agrave; di questa"/>
+    		<underline method="pen" type="straight" language="IT" text="diuezza d'usare col marito"/>
+    		<underline method="pen" type="straight" language="IT" text="accorta, &amp; pronta"/>
+    		<underline method="pen" type="straight" language="IT" text="conosciuta la"/>
+    		<underline method="pen" type="straight" language="IT" text="cagione della"/>
+    		<underline method="pen" type="straight" language="IT" text="gli consent&igrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="con patto"/>
+    		<underline method="pen" type="straight" language="IT" text="andasse prima a pisciare"/>
+    		<underline method="pen" type="straight" language="IT" text="mosso da uano, &amp; concupiscibile"/>
+    		<underline method="pen" type="straight" language="IT" text="allhora di uerno"/>
+    		<underline method="pen" type="straight" language="IT" text="freddo"/>
+    		<underline method="pen" type="straight" language="IT" text="uoto"/>
+    		<underline method="pen" type="straight" language="IT" text="hebbe la vescica"/>
+    		<underline method="pen" type="straight" language="IT" text="potissima cagione"/>
+    		<underline method="pen" type="straight" language="IT" text="il capo in superbia"/>
+    		<underline method="pen" type="straight" language="IT" text="sopragiugnendolo il freddo"/>
+    		<underline method="pen" type="straight" language="IT" text="tentatione gli usc&igrave; delle reni"/>
+    		<underline method="pen" type="straight" language="IT" text="uolse la schiena alla moglie"/>
+    		<underline method="pen" type="straight" language="IT" text="salita in zurlo"/>
+    		<underline method="pen" type="straight" language="IT" text="maneggiando il petto, &amp; l'altre membra del"/>
+    		<underline method="pen" type="straight" language="IT" text="solecitare, che desse effetto al desiderio"/>
+    		<underline method="pen" type="straight" language="IT" text="no[n] mouendosi egli"/>
+    		<underline method="pen" type="straight" language="IT" text="ogni altra cosa piu tosto haurebbe"/>
+    		<underline method="pen" type="straight" language="IT" text="marito mio dolce, or non uolete"/>
+    		<underline method="pen" type="straight" language="IT" text="una lancia"/>
+    		<underline method="pen" type="straight" language="IT" text="moglie mia cara"/>
+    		<underline method="pen" type="straight" language="IT" text="perdete voi tempo"/>
+    		<underline method="pen" type="straight" language="IT" text="uada a cacare"/>
+    		<underline method="pen" type="straight" language="IT" text="a ridere"/>
+    		<underline method="pen" type="straight" language="IT" text="uolgendosi"/>
+    		<underline method="pen" type="straight" language="IT" text="Battista Giraldi"/>
+    		<underline method="pen" type="straight" language="IT" text="si solo"/>    		
+    		<underline method="pen" type="straight" language="IT" text="sarei io, qua[n]do io fusse teco"/>
+    		<underline method="pen" type="straight" language="IT" text="sauio"/>
     			
     			
 	       
@@ -229,7 +163,7 @@
     		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- sauio.] -->
 	    	
 	    	<!-- Left margin -->
-	    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- marauigliatasi: this mark is ambiguous --> <!--JG: Agreed, but I think you're right to tag it as a straight_quotation_mark-->
+	    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- marauigliatasi -->
     		<mark name="bracket" method="pen" place="left_margin"/> <!-- se ... re -->
     		<mark name="bracket" method="pen" place="left_margin"/> <!-- lo... spose -->
 		 
@@ -251,8 +185,6 @@
     		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- solo sarei -->
     		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- teco -->
     		<mark name="plus_sign" method="pen" place="intext" /> <!-- motto sauio -->
-    		
-    		<mark name="dot" method="pen" place="tail"/> <!-- beside SS symbol -->
     		
 
     </annotation>

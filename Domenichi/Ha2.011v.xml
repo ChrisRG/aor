@@ -1,72 +1,6 @@
-<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="no" ?>
 
-<!-- Updated 10/10/2014 -->
-
-<!DOCTYPE transcription [
-<!ELEMENT transcription (page, annotation)>
-<!ELEMENT page EMPTY>
-	<!ATTLIST page filename CDATA #REQUIRED>
-	<!ATTLIST page pagination CDATA #IMPLIED>
-	<!ATTLIST page signature CDATA #IMPLIED>
-	<!ATTLIST page reader CDATA #REQUIRED>
-	
-<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
-	<!ELEMENT marginalia (language*, translation?)>
-	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
-	<!ATTLIST marginalia date CDATA #IMPLIED>
-	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
-	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
-	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
-	 	<!ELEMENT language (position*)>
-			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
-				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
-					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
-					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
-						<!ELEMENT marginalia_text (#PCDATA)>
-						<!ELEMENT person EMPTY>
-							<!ATTLIST person name CDATA #REQUIRED>
-						<!ELEMENT book EMPTY>
-							<!ATTLIST book title CDATA #REQUIRED>
-						<!ELEMENT location EMPTY>
-							<!ATTLIST location name CDATA #REQUIRED>
-						<!ELEMENT X-ref EMPTY>
-							<!ATTLIST X-ref person CDATA #REQUIRED>
-							<!ATTLIST X-ref book_title CDATA #REQUIRED>
-						<!ELEMENT emphasis EMPTY> 
-							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
-							<!ATTLIST emphasis text CDATA #IMPLIED>
-		<!ELEMENT translation (#PCDATA)>
-	<!ELEMENT underline EMPTY>
-		<!ATTLIST underline method (chalk|pen) #REQUIRED>
-		<!ATTLIST underline type (straight|curved) #REQUIRED>
-		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST underline text CDATA #IMPLIED> 
-	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
-		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST symbol text CDATA #IMPLIED>
-	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
-		<!ATTLIST mark method (chalk|pen) #REQUIRED>
-		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST mark text CDATA #IMPLIED>
-			
-			
-<!ENTITY agrave "à">
-<!ENTITY aacute "á">
-<!ENTITY atiled "ã">
-<!ENTITY eacute "é">
-<!ENTITY egrave "è">
-<!ENTITY ecirc "ê">
-<!ENTITY ograve "ò">
-<!ENTITY ocirc "Ô">
-<!ENTITY euml "ë">
-<!ENTITY igrave "ì">
-<!ENTITY ugrave "ù">
-]
->
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
 
 <transcription>
 
@@ -79,7 +13,7 @@
         			<language ident="LA">
         				<position place="head" book_orientation="0">
                     				<marginalia_text>
-                    					Haec etiam Penelope [suam] habet rationem: sed fragilem. <!--JG: Yeah, it definitely is suam, so you can remove the brackets-->
+                    					Haec etiam Penelope suam habet rationem: sed fragilem.
                     				</marginalia_text>
         					<person name="Penelope"/>
         				</position>
@@ -89,8 +23,9 @@
     			<language ident="LA">
     				<position place="left_margin" book_orientation="0">
     					<marginalia_text>
-    						Vita Eudromi iteru[m]. <!--JG: Shouldn't you tag Eudromus as you did before?-->
+    						Vita Eudromi iteru[m].
     					</marginalia_text>
+    					<person name="Eudromus"/>
     				</position>
     			</language>
     		</marginalia>
@@ -107,7 +42,7 @@
     			<language ident="LA">
     				<position place="intext" book_orientation="0">
     					<marginalia_text>
-    						( Adhuc citius. 	<!-- There appears to be a mark over the S in citius, unsure of how to record --> <!-- JG: I see it, but I would ignore it-->
+    						( Adhuc citius. 
     					</marginalia_text>
     				</position>
     			</language>
@@ -130,15 +65,7 @@
     				</position>
     			</language>
     		</marginalia>
-    		<marginalia hand="Italian">
-    			<language ident="LA">
-    				<position place="tail" book_orientation="0">
-    					<marginalia_text>
-    						<!--JG: is some text missing here? -->
-    					</marginalia_text>
-    				</position>
-    			</language>
-    		</marginalia>
+    	
     		<marginalia hand="Italian">
     			<language ident="LA">
     				<position place="tail" book_orientation="0">
@@ -176,33 +103,34 @@
     		
     		
         
-	    	<!-- Underlines --> <!--JG: use language attribute as well!-->
+	    	<!-- Underlines --> 
 	        
-	    	<underline method="pen" type="straight" text="questo essere possibile"/>
-    		<underline method="pen" type="straight" text="esempio anchor uiuo esser"/>
-    		<underline method="pen" type="straight" text="per uent'anni almeno"/>
-    		<underline method="pen" type="straight" text="innamorato d'una sua cittadina"/>
-    		<underline method="pen" type="straight" text="quei due, che haueua"/> <!--JG: you missed some underlining here, starting with 'sono' -->
-    		<underline method="pen" type="straight" text="ella sia d'essa"/>
-    		<underline method="pen" type="straight" text="esser certa"/>
-    		<underline method="pen" type="straight" text="diedero a ridere"/>
-    		<underline method="pen" type="straight" text="detto la bugia"/>
-    		<underline method="pen" type="straight" text="come colta ne' suoi propri lacci"/>
-    		<underline method="pen" type="straight" text="ne sapesse uscire"/>
-    		<underline method="pen" type="straight" text="ci uccell&ograve; tutti"/>
-    		<underline method="pen" type="straight" text="non era dessa"/>
-    		<underline method="pen" type="straight" text="ella era pur lei"/>
-    		<underline method="pen" type="straight" text="sono cosi sciocca; che"/>
-    		<underline method="pen" type="straight" text="lasciassi giamai"/>
-    		<underline method="pen" type="straight" text="innamorato"/>
-    		<underline method="pen" type="straight" text="tormentarsi"/>
-    		<underline method="pen" type="straight" text="con mio si gran danno"/>
-    		<underline method="pen" type="straight" text="astretti crederle l'una &amp;"/>
-    		<underline method="pen" type="straight" text="altra cosa"/>
-    		<underline method="pen" type="straight" text="singolar dolcezza"/>
-    		<underline method="pen" type="straight" text="del sangue Bolognese"/>
-    		<underline method="pen" type="straight" text="molto uecchio"/>
-    		<underline method="pen" type="straight" text="in letto con la moglie"/>
+    		<underline method="pen" type="straight" language="IT" text="questo essere possibile"/>
+    		<underline method="pen" type="straight" language="IT" text="esempio anchor uiuo esser"/>
+    		<underline method="pen" type="straight" language="IT" text="per uent'anni almeno"/>
+    		<underline method="pen" type="straight" language="IT" text="innamorato d'una sua cittadina"/>
+    		<underline method="pen" type="straight" language="IT" text="quei due, che haueua"/> 
+    		<underline method="pen" type="straight" language="IT" text="sono poco considerati"/> 
+    		<underline method="pen" type="straight" language="IT" text="ella sia d'essa"/>
+    		<underline method="pen" type="straight" language="IT" text="esser certa"/>
+    		<underline method="pen" type="straight" language="IT" text="diedero a ridere"/>
+    		<underline method="pen" type="straight" language="IT" text="detto la bugia"/>
+    		<underline method="pen" type="straight" language="IT" text="come colta ne' suoi propri lacci"/>
+    		<underline method="pen" type="straight" language="IT" text="ne sapesse uscire"/>
+    		<underline method="pen" type="straight" language="IT" text="ci uccell&ograve; tutti"/>
+    		<underline method="pen" type="straight" language="IT" text="non era dessa"/>
+    		<underline method="pen" type="straight" language="IT" text="ella era pur lei"/>
+    		<underline method="pen" type="straight" language="IT" text="sono cosi sciocca; che"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciassi giamai"/>
+    		<underline method="pen" type="straight" language="IT" text="innamorato"/>
+    		<underline method="pen" type="straight" language="IT" text="tormentarsi"/>
+    		<underline method="pen" type="straight" language="IT" text="con mio si gran danno"/>
+    		<underline method="pen" type="straight" language="IT" text="astretti crederle l'una &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="altra cosa"/>
+    		<underline method="pen" type="straight" language="IT" text="singolar dolcezza"/>
+    		<underline method="pen" type="straight" language="IT" text="del sangue Bolognese"/>
+    		<underline method="pen" type="straight" language="IT" text="molto uecchio"/>
+    		<underline method="pen" type="straight" language="IT" text="in letto con la moglie"/>
 	       
 	       
 	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
@@ -222,12 +150,13 @@
 	    	
 	    	<!-- Left margin -->
     		<mark name="bracket" method="pen" place="left_margin"/> <!-- che ... tutta -->
-    		<!--JG: There's a quotation_mark in the left margin, besides the word sciassi and through the marginal not effigies-->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- sciassi  -->
+    		
 		    
 	    	<!-- Intext -->
     		<mark name="dot" method="pen" place="intext"/> <!-- possibile, &  -->
     		<mark name="dot" method="pen" place="intext"/> <!-- amanti, o -->
-    		<!--JG: There's also a dot after 'sapesse uscire'-->
+    		<mark name="dot" method="pen" place="intext"/> <!-- sapesse uscire, -->    	
     		<mark name="quotation_mark" method="pen" place="intext"/> <!-- uccello -->
     		<mark name="quotation_mark" method="pen" place="intext"/> <!-- cosi -->
     		<mark name="comma" method="pen" place="intext"/> <!-- innamorato tormentarsi -->

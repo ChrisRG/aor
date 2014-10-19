@@ -1,72 +1,6 @@
-<?xml version="1.0" standalone="yes" ?>
+<?xml version="1.0" standalone="no" ?>
 
-<!-- Updated 10/10/2014 -->
-
-<!DOCTYPE transcription [
-<!ELEMENT transcription (page, annotation)>
-<!ELEMENT page EMPTY>
-	<!ATTLIST page filename CDATA #REQUIRED>
-	<!ATTLIST page pagination CDATA #IMPLIED>
-	<!ATTLIST page signature CDATA #IMPLIED>
-	<!ATTLIST page reader CDATA #REQUIRED>
-	
-<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
-	<!ELEMENT marginalia (language*, translation?)>
-	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
-	<!ATTLIST marginalia date CDATA #IMPLIED>
-	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
-	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
-	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
-	 	<!ELEMENT language (position*)>
-			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
-				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
-					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
-					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
-						<!ELEMENT marginalia_text (#PCDATA)>
-						<!ELEMENT person EMPTY>
-							<!ATTLIST person name CDATA #REQUIRED>
-						<!ELEMENT book EMPTY>
-							<!ATTLIST book title CDATA #REQUIRED>
-						<!ELEMENT location EMPTY>
-							<!ATTLIST location name CDATA #REQUIRED>
-						<!ELEMENT X-ref EMPTY>
-							<!ATTLIST X-ref person CDATA #REQUIRED>
-							<!ATTLIST X-ref book_title CDATA #REQUIRED>
-						<!ELEMENT emphasis EMPTY> 
-							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
-							<!ATTLIST emphasis text CDATA #IMPLIED>
-		<!ELEMENT translation (#PCDATA)>
-	<!ELEMENT underline EMPTY>
-		<!ATTLIST underline method (chalk|pen) #REQUIRED>
-		<!ATTLIST underline type (straight|curved) #REQUIRED>
-		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST underline text CDATA #IMPLIED> 
-	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
-		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST symbol text CDATA #IMPLIED>
-	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
-		<!ATTLIST mark method (chalk|pen) #REQUIRED>
-		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
-		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
-		<!ATTLIST mark text CDATA #IMPLIED>
-			
-			
-<!ENTITY agrave "à">
-<!ENTITY aacute "á">
-<!ENTITY atiled "ã">
-<!ENTITY eacute "é">
-<!ENTITY egrave "è">
-<!ENTITY ecirc "ê">
-<!ENTITY ograve "ò">
-<!ENTITY ocirc "Ô">
-<!ENTITY euml "ë">
-<!ENTITY igrave "ì">
-<!ENTITY ugrave "ù">
-]
->
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
 
 <transcription>
 
@@ -79,7 +13,7 @@
         			<language ident="LA">
            			<position place="head" book_orientation="0">
                     				<marginalia_text>
-                      			    Vnici quotidiana singularitas.
+                      			   		 Vnici quotidiana singularitas.
                     				</marginalia_text>
            				<emphasis method="chalk"/>
            			</position>
@@ -98,9 +32,9 @@
     			<language ident="LA">
     				<position place="intext" book_orientation="0">
     					<marginalia_text>
-    						Euscopum oportet esse [e]uheiticum. <!--JG: Strange word?!-->
-    						<!--JG: Should you not tag Euscopus?-->
-    					</marginalia_text>    					
+    						Euscopum oportet esse [e]uheiticum. <!-- Strange word -->    						
+    					</marginalia_text>    	
+    					<person name="Euscopus"/>
     				</position>
     			</language>
     		</marginalia>
@@ -119,6 +53,16 @@
     					<marginalia_text>
     						Affectio iuuenum: perfectio virorum.
     					</marginalia_text>    					
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Habituata excellentia: et in omni genere perfectio.
+    					</marginalia_text>    					
+    					<emphasis method="chalk"/>
     				</position>
     			</language>
     		</marginalia>
@@ -155,41 +99,40 @@
     			</language>
     		</marginalia>
         
-        <!--JG: I think you forgot the marginal note starting with 'habituata'-->
         
-	    	<!-- Underlines --> <!--JG: also use the language attribute-->
+	    	<!-- Underlines -->
 	        
-	    	<underline method="pen" type="straight" text="Innacquaua"/>
-    		<underline method="pen" type="straight" text="Signore auaro"/>
-    		<underline method="pen" type="straight" text="uino"/>
-    		<underline method="pen" type="straight" text="cauar loro i denti, perche non hauessero mangiato"/>
-    		<underline method="pen" type="straight" text="macinaua gagliarda"/>
-    		<underline method="pen" type="straight" text="cotesto tuo mulino"/>
-    		<underline method="pen" type="straight" text="per fermare"/>
-    		<underline method="pen" type="straight" text="lasciate, mancar l'acqua"/>
-    		<underline method="pen" type="straight" text="Pronto, uiuo"/>
-    		<underline method="pen" type="straight" text="Il Bernia"/>
-    		<underline method="pen" type="straight" text="un mercato"/>
-    		<underline method="pen" type="straight" text="uno asino"/>
-    		<underline method="pen" type="straight" text="fra l'orecchie"/>
-    		<underline method="pen" type="straight" text="gett&ograve; morto a' piedi"/>
-    		<underline method="pen" type="straight" text="Non ti colsi"/>
-    		<underline method="pen" type="straight" text="prouerbio"/>
-    		<underline method="pen" type="straight" text="freddo"/>
-    		<underline method="pen" type="straight" text="un contadino"/>
-    		<underline method="pen" type="straight" text="fare il carnouale a"/>
-    		<underline method="pen" type="straight" text="sua moglie"/>
-    		<underline method="pen" type="straight" text="co' seruigi delle donne"/>
-    		<underline method="pen" type="straight" text="O pagansi elleno"/>
-    		<underline method="pen" type="straight" text="Si fanno bene"/>
-    		<underline method="pen" type="straight" text="chi"/>
-    		<underline method="pen" type="straight" text="chi un"/>
-    		<underline method="pen" type="straight" text="Gnasse"/>
-    		<underline method="pen" type="straight" text="il figliuolo mezzano di babbeta"/>
-    		<underline method="pen" type="straight" text="haurebbe a dar parecchi"/>
-    		<underline method="pen" type="straight" text="Cardinale di Monte"/>
-    		<underline method="pen" type="straight" text="creato Papa"/>
-    		<underline method="pen" type="straight" text="Giulo terzo"/>
+    		<underline method="pen" type="straight" language="IT" text="Innacquaua"/>
+    		<underline method="pen" type="straight" language="IT" text="Signore auaro"/>
+    		<underline method="pen" type="straight" language="IT" text="uino"/>
+    		<underline method="pen" type="straight" language="IT" text="cauar loro i denti, perche non hauessero mangiato"/>
+    		<underline method="pen" type="straight" language="IT" text="macinaua gagliarda"/>
+    		<underline method="pen" type="straight" language="IT" text="cotesto tuo mulino"/>
+    		<underline method="pen" type="straight" language="IT" text="per fermare"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciate, mancar l'acqua"/>
+    		<underline method="pen" type="straight" language="IT" text="Pronto, uiuo"/>
+    		<underline method="pen" type="straight" language="IT" text="Il Bernia"/>
+    		<underline method="pen" type="straight" language="IT" text="un mercato"/>
+    		<underline method="pen" type="straight" language="IT" text="uno asino"/>
+    		<underline method="pen" type="straight" language="IT" text="fra l'orecchie"/>
+    		<underline method="pen" type="straight" language="IT" text="gett&ograve; morto a' piedi"/>
+    		<underline method="pen" type="straight" language="IT" text="Non ti colsi"/>
+    		<underline method="pen" type="straight" language="IT" text="prouerbio"/>
+    		<underline method="pen" type="straight" language="IT" text="freddo"/>
+    		<underline method="pen" type="straight" language="IT" text="un contadino"/>
+    		<underline method="pen" type="straight" language="IT" text="fare il carnouale a"/>
+    		<underline method="pen" type="straight" language="IT" text="sua moglie"/>
+    		<underline method="pen" type="straight" language="IT" text="co' seruigi delle donne"/>
+    		<underline method="pen" type="straight" language="IT" text="O pagansi elleno"/>
+    		<underline method="pen" type="straight" language="IT" text="Si fanno bene"/>
+    		<underline method="pen" type="straight" language="IT" text="chi"/>
+    		<underline method="pen" type="straight" language="IT" text="chi un"/>
+    		<underline method="pen" type="straight" language="IT" text="Gnasse"/>
+    		<underline method="pen" type="straight" language="IT" text="il figliuolo mezzano di babbeta"/>
+    		<underline method="pen" type="straight" language="IT" text="haurebbe a dar parecchi"/>
+    		<underline method="pen" type="straight" language="IT" text="Cardinale di Monte"/>
+    		<underline method="pen" type="straight" language="IT" text="creato Papa"/>
+    		<underline method="pen" type="straight" language="IT" text="Giulo terzo"/>
     		  
 	       
 	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
