@@ -1,6 +1,3 @@
-<?xml version="1.0" standalone="yes" ?>
-
-<!DOCTYPE transcription [
 <!ELEMENT transcription (page, annotation)>
 <!ELEMENT page EMPTY>
 	<!ATTLIST page filename CDATA #REQUIRED>
@@ -37,7 +34,7 @@
 	<!ELEMENT underline EMPTY>
 		<!ATTLIST underline method (chalk|pen) #REQUIRED>
 		<!ATTLIST underline type (straight|curved) #REQUIRED>
-		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #REQUIRED>
 		<!ATTLIST underline text CDATA #IMPLIED> 
 	<!ELEMENT symbol EMPTY>
 		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
@@ -59,5 +56,7 @@
 <!ENTITY ecirc "ê">
 <!ENTITY igrave "ì">
 <!ENTITY ograve "ò">
+<!ENTITY oacute "ó">
 <!ENTITY Ocirc "Ô">
 <!ENTITY euml "ë">
+<!ENTITY ugrav "ù">
